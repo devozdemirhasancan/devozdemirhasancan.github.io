@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/devozdemirhasancan/devozdemirhasancan.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/devozdemirhasancan/devozdemirhasancan.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasan Can | Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .socials a {
+            color: #ffffff;
+            margin: 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .projects {
+            margin-top: 30px;
+        }
+        .project-card {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey there! 👋 I'm Hasan Can</h1>
+        <p>Full + Full Stack Developer | AI, Web & Embedded Systems</p>
+        
+        <div class="socials">
+            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://yourwebsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+        </div>
+        
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="project-card">Project 1 - Description</div>
+            <div class="project-card">Project 2 - Description</div>
+        </div>
+    </div>
+</body>
+</html>
