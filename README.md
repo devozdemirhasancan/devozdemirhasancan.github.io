@@ -1,9 +1,16 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasan Can | Developer</title>
+    <title>Hasancan | Developer</title>
+    <meta name="description" content="Hasancan - Full Stack Developer working with AI, Web, and Embedded Systems.">
+    <meta name="keywords" content="Hasancan, Developer, Full Stack, AI, Embedded Systems, Web Development">
+    <meta name="author" content="Hasancan">
+    <meta property="og:title" content="Hasancan | Developer">
+    <meta property="og:description" content="Full Stack Developer working with AI, Web, and Embedded Systems.">
+    <meta property="og:image" content="https://sanaticinhasancan.art">
+    <meta property="og:url" content="https://sanaticinhasancan.art">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -46,16 +53,36 @@
         <p>Full + Full Stack Developer | AI, Web & Embedded Systems</p>
         
         <div class="socials">
-            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://yourwebsite.com" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://twitter.com/sanaticincan" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:devozdemirhasancan@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://sanaticinhasancan.art" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://kick.com/sanaticinhasancan" target="_blank"><i class="fab fa-kickstarter"></i></a>
+            <a href="https://instagram.com/sanaticinhasancan" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
         
         <div class="projects">
             <h2>Projects</h2>
-            <div class="project-card">Project 1 - Description</div>
-            <div class="project-card">Project 2 - Description</div>
+            <div id="repo-list">Loading repositories...</div>
         </div>
     </div>
+
+    <script>
+        async function fetchRepos() {
+            const username = "devozdemirhasancan";
+            const response = await fetch(`https://api.github.com/users/${username}/repos`);
+            const repos = await response.json();
+            const repoList = document.getElementById("repo-list");
+            repoList.innerHTML = "";
+            
+            repos.forEach(repo => {
+                const repoItem = document.createElement("div");
+                repoItem.className = "project-card";
+                repoItem.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a> - ⭐ ${repo.stargazers_count}`;
+                repoList.appendChild(repoItem);
+            });
+        }
+
+        fetchRepos();
+    </script>
 </body>
 </html>
